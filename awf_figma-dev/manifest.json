@@ -1,0 +1,9 @@
+{
+    "name": "ArtWorkFlow",
+    "id": "1238439766172198452",
+    "api": "1.0.0",
+    "main": "dist/code.js",
+    "ui": "dist/ui.html",
+    "enablePrivatePluginApi":true,
+    "editorType": ["figma", "figjam"]
+  }
