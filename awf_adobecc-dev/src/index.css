@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  font-style: normal;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  overflow: hidden;
+  height: 100%;
+
+}
+input[type='checkbox']:checked {
+  background-color: red;
+}
+
+code {
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+
+textarea{
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray; 
+}
+
+::-webkit-datetime-edit { 
+  padding: 0em; 
+  font-family:Arial, Helvetica, sans-serif; 
+  font-size: 12px; 
+  color:#333333 }
+::-webkit-inner-spin-button { display: none; }

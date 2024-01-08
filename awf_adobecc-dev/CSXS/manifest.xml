@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 1) -->
+<ExtensionManifest ExtensionBundleId="com.my.artworkfow" ExtensionBundleVersion="1.0.0" Version="7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ExtensionList>
+    <!-- 2) -->
+    <Extension Id="com.my.artworkflow.panel" Version="1.0.0" />
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <!-- 3) -->
+      <Host Name="ILST" Version="20" >
+        <HostPath>https://artworkflow.qa1.indopus.in/</HostPath>
+      </Host>
+        <Host Name="AEFT" Version="15" >
+        <HostPath>https://artworkflow.qa1.indopus.in/</HostPath>
+      </Host>
+        <Host Name="PHSP" Version="19" >
+        <HostPath>https://artworkflow.qa1.indopus.in/</HostPath>
+      </Host>
+       <Host Name="IDSN" Version="13" >
+        <HostPath>https://artworkflow.qa1.indopus.in/</HostPath>
+      </Host>
+       <Host Name="PPRO" Version="12" >
+        <HostPath>https://artworkflow.qa1.indopus.in/</HostPath>
+      </Host>
+    </HostList>
+    <LocaleList>
+      <Locale Code="All" />
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="11.0" />
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <!-- 2) -->
+    <Extension Id="com.my.artworkflow.panel">
+      <DispatchInfo>
+        <Resources>
+          <!-- 4) -->
+          <MainPath>./dist/index.html</MainPath>
+          <!-- 5) -->
+          <ScriptPath>./src/host/index.jsx</ScriptPath>
+          <CEFCommandLine />
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <!-- 6) -->
+          <Menu>artworkflow</Menu>
+          <Geometry>
+            <Size>
+              <!-- 7) -->
+              <Height>650</Height>
+              <Width>428</Width>
+            </Size>
+          </Geometry>
+          <Icons />
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>
